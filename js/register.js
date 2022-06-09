@@ -5,6 +5,12 @@ const registerUpladInput = document.querySelector("#uploadInput");
 const showPasswordButton = document.querySelector("#showButton");
 
 const HOST = "https://epictube-back.herokuapp.com";
+// const HOST = "http://localhost:6500";
+const TOKEN = window.localStorage.getItem("token");
+
+if (TOKEN) {
+  window.location.replace("admin.html");
+}
 
 showPasswordButton.onclick = () => {
   if (registerPasswordInput.type == "password") registerPasswordInput.type = "text";
