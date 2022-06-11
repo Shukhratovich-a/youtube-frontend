@@ -3,8 +3,8 @@ const registerUsernameInput = document.querySelector("#usernameInput");
 const registerPasswordInput = document.querySelector("#passwordInput");
 const showPasswordButton = document.querySelector("#showButton");
 
-const HOST = "https://epictube-back.herokuapp.com";
 // const HOST = "http://localhost:6500";
+const HOST = "https://epic-application.herokuapp.com";
 const TOKEN = window.localStorage.getItem("token");
 
 if (TOKEN) {
